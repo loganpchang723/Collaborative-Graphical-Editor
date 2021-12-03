@@ -196,7 +196,6 @@ public class Editor extends JFrame {
      * in deleting mode, (request to) delete clicked shape
      */
     private void handlePress(Point p) {
-        // TODO: YOUR CODE HERE
         // In drawing mode, start drawing a new shape
         if (mode == Editor.Mode.DRAW) {
             if (shapeType.equals("ellipse")) curr = new Ellipse(p.x, p.y, color);
@@ -241,7 +240,6 @@ public class Editor extends JFrame {
      * in moving mode, (request to) drag the object
      */
     private void handleDrag(Point p) {
-        // TODO: YOUR CODE HERE
         // In drawing mode, revise the shape as it is stretched out
         if (mode == Editor.Mode.DRAW) {
             if (curr instanceof Rectangle) curr = new Rectangle(drawFrom.x, drawFrom.y, p.x, p.y, color);
@@ -269,7 +267,6 @@ public class Editor extends JFrame {
      * in moving mode, release it
      */
     private void handleRelease() {
-        // TODO: YOUR CODE HERE
         if (mode == Mode.DRAW) {
             String message = "add_"+curr.toString();
             comm.send(message);
