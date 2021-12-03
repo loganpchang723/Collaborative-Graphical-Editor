@@ -5,7 +5,6 @@ import java.util.ArrayList;
  * Utility class for handling messages to and from clients and servers
  *
  * @author Logan Chang, CS10, PS6, 20F
- * @author Ashna Kumar, CS10, PS6, 20F
  */
 public class MessageHandler {
 
