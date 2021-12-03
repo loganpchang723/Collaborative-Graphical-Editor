@@ -12,7 +12,6 @@ import javax.swing.*;
  * @author CBK, spring 2016 and Fall 2016, restructured Shape and some of the GUI
  *
  * @author Logan Chang, CS10, PS6, 20F
- * @author Ashna Kumar, CS10, PS6, 20F
  */
 
 public class Editor extends JFrame {
