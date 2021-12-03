@@ -8,7 +8,6 @@ import java.util.ArrayList;
  *
  * @author Chris Bailey-Kellogg, Dartmouth CS 10, Fall 2012; revised Winter 2014 to separate SketchServerCommunicator
  * @author Logan Chang, CS10, PS6, 20F
- * @author Ashna Kumar, CS10, PS6, 20F
  */
 public class SketchServerCommunicator extends Thread {
     private Socket sock;                    // to talk with client
@@ -42,13 +41,11 @@ public class SketchServerCommunicator extends Thread {
             out = new PrintWriter(sock.getOutputStream(), true);
 
             // Tell the client the current state of the world
-            // TODO: YOUR CODE HERE
             if (!this.server.getSketch().getShapes().isEmpty()) {
                 out.println("all_" + this.server.getSketch().toString());
             }
 
             // Keep getting and handling messages from the client
-            // TODO: YOUR CODE HERE
             String line;
             while ((line = in.readLine()) != null) {
                 String message = line;
