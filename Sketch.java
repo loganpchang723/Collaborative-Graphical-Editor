@@ -5,7 +5,6 @@ import java.util.TreeMap;
  * Sketch object to hold all of the shapes currently being acted upon (both client and server side)
  *
  * @author Logan Chang, CS10, PS6, 20F
- * @author Ashna Kumar, CS10, PS6, 20F
  */
 public class Sketch {
     TreeMap<Integer, Shape> shapes; //Map of id -> shape
