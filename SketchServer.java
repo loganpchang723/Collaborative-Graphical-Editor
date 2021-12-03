@@ -8,7 +8,6 @@ import java.io.*;
  *
  * @author Chris Bailey-Kellogg, Dartmouth CS 10, Fall 2012; revised Winter 2014 to separate SketchServerCommunicator
  * @author Logan Chang, CS10, PS6, 20F
- * @author Ashna Kumar, CS10, PS6, 20F
  */
 public class SketchServer {
     private ServerSocket listen;                        // for accepting connections
