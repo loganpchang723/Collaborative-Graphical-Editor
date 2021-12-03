@@ -11,7 +11,6 @@ import java.util.ArrayList;
  * @author Travis Peters, Dartmouth CS 10, Winter 2015; remove EditorCommunicatorStandalone (use echo server for testing)
  *
  * @author Logan Chang, CS10, PS6, 20F
- * @author Ashna Kumar, CS10, PS6, 20F
  */
 public class EditorCommunicator extends Thread {
 	private PrintWriter out;		// to server
@@ -49,7 +48,6 @@ public class EditorCommunicator extends Thread {
 	public void run() {
 		try {
 			// Handle messages
-			// TODO: YOUR CODE HERE
 			String line;
 			while ((line = in.readLine()) != null) {
 				MessageHandler.handleClient(line, editor.getSketch());
